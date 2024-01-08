@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className="">
       <div className="flex flex-col lg:flex-row items-center  bg-[#cccaca] dark:bg-slate-800">
-        <div className="p-10 flex flex-col  bg-[#cccaca] dark:bg-slate-800 text-[#FFFFFF] space-y-5 space-x-4">
+        <div className="p-10 font-sans flex flex-col bg-[#cccaca] dark:bg-slate-800 text-[#FFFFFF] space-y-5 space-x-4">
           <h1 className="text-5xl font-bold">
             Welcome to Dropbox. <br />
             <br />
@@ -13,7 +13,7 @@ export default function Home() {
           </h1>
           <br />
 
-          <p className="pb-20">
+          <p className="pb-20 space-y-3">
             Enhance your personal storage with Dropbox, offering a simple and
             efficient way to upload, organize, and access files from anywhere.
             Securely store important documents and media, and experience the
@@ -45,11 +45,7 @@ export default function Home() {
 
       <p className="text-center font-bold text-xl pt-5">Disclaimer</p>
       <p className="text-center font-light p-2">
-        This Project is made for informational and educational purposes only. We
-        do not own or affiliate with Dropbox or/and any of its subsidiaries in
-        any form. Copyright Disclaimer under section 107 of the Copyright Act
-        1976, allowance is made for “fair use” of this video for education
-        purposes.
+        This Project is made for informational and educational purposes only. 
       </p>
     </main>
   );
