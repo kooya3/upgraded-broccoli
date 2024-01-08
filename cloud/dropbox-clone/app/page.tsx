@@ -4,8 +4,8 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="">
-      <div className="flex flex-col lg:flex-row items-center  bg-[#cccaca] dark:bg-slate-800">
-        <div className="p-10 font-sans flex flex-col bg-[#cccaca] dark:bg-slate-800 text-[#FFFFFF] space-y-5 space-x-4">
+      <div className="flex flex-col lg:flex-row items-center  bg-[#1E1919] dark:bg-slate-800">
+        <div className="p-10 font-sans flex flex-col bg-[#1E1919] dark:bg-slate-800 text-[#FFFFFF] space-y-5 space-x-4">
           <h1 className="text-5xl font-bold">
             Welcome to Dropbox. <br />
             <br />
