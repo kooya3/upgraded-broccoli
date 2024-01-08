@@ -2,7 +2,7 @@ function dashboard() {
   return (
     <main className="">
       <div>
-    <div className="p-10 flex flex-col bg-[#2B2929] dark:bg-slate-800 text-white space-y-5 font-mono">
+    <div className="p-10 flex flex-col bg-[#2B2929] dark:bg-slate-800 text-white space-y-5 font-sans">
       <h1 className="text-5xl font-bold">
         Welcome to DropBox. <br />
         <br />
