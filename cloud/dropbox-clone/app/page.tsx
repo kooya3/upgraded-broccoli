@@ -11,14 +11,14 @@ function dashboard() {
         <br />
         Storing everything for you and your business needs. All in one place
       </h1>
-
+<br className="m-md" />
       <p className="pb-20">
         Enhance your personal storage. Offering a simple and efficient way to upload, organize, and access files from anywhere. 
       </p>
-
+<br />
       <Link href="/dashboard">
       Try it for free!
-      <ArrowRight className="" />
+      <ArrowRight className="z-auto bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 ..." />
       </Link>
     </div>
     </div>
