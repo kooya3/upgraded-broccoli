@@ -1,9 +1,5 @@
-import React from 'react'
+"use client"
 
-function ThemeToggler() {
-  return (
-    <div>ThemeToggler</div>
-  )
-}
+import * as React from "react"
+import { MoonIcon, SunIcon } from "@radix-ui/react-icons"
 
-export default ThemeToggler
