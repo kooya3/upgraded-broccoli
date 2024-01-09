@@ -1,9 +1,11 @@
-import React from 'react'
+import Dropzone from "react-dropzone";
 
-function Dropzpne() {
-  return (
-    <div>Dropzpne</div>
-  )
-}
+<Dropzone onDrop={(acceptedFiles) => console.log(acceptedFiles)}>
+  {({ getRootProps, getInutProps }) => (
+    <section>
+      <div>
 
-export default Dropzpne
+      </div>
+    </section>
+  )}
+</Dropzone>
