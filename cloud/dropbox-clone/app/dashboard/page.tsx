@@ -1,3 +1,6 @@
+import { auth } from "@clerk/nextjs"
+
+
 function Dashboard() {
   return (
     <div>Dashboard</div>
