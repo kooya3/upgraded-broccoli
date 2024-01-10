@@ -1,3 +1,5 @@
+"use client";
+
 import Dropzone from "react-dropzone";
 
 function Dropzone() {
