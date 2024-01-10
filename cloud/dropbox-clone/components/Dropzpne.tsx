@@ -1,3 +1,5 @@
+"use client";
+
 import Dropzone from 'react-dropzone'
 
 <Dropzone onDrop={acceptedFiles => console.log(acceptedFiles)}>
