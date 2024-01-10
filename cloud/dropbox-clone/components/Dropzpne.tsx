@@ -4,6 +4,17 @@ import { cn } from "@/lib/utils";
 import DropzoneComponent from "react-dropzone";
 
 function Dropzone() {
+
+  const onDrop = (acceptedFiles: File[]) => {
+    acceptedFiles.forEach(file => {
+      const reader = new FileReader();
+    }) 
+  }
+
+
+
+
+
   // max file size 20MB
   const maxSize = 20971520;
 
