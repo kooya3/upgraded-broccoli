@@ -21,13 +21,18 @@ function Dropzone() {
         <section>
           <div {...getRootProps()}>
             <input {...getInputProps()} />
-            {}
-            <p>Drag 'n' drop some files here, or click to select files</p>
+            {!isDragActive && "Click here or drop a file to upload!"}
+            {isDragActive && !isDragReject && "Drop to upload this file!"}
+            {isDragReject && "File type not accepted, sorry!"}
+            {isFileTooLarge && (
+              <div className="text-danger mt-2">File is too large.</div>
+            )}
           </div>
         </section>
-      )}
+      );
+    }}
     </DropzoneComponent>
-  )
+  );
 }
 
 export default Dropzone
