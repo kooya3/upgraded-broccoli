@@ -1,14 +1,27 @@
 "use client";
 
 import { cn } from "@/lib/utils";
+import { useState } from "react";
 import DropzoneComponent from "react-dropzone";
 
 function Dropzone() {
+  const [loading, setLoading] = useState(false);
 
   const onDrop = (acceptedFiles: File[]) => {
     acceptedFiles.forEach(file => {
       const reader = new FileReader();
-    }) 
+
+      reader.onabort = () => console.log("file reading was aborted");
+      reader.onerror = () => console.log("file reading has failed");
+      reader.onload = async () => {
+        await uploadPost(file);
+      };
+      reader.readAsArrayBuffer(file);
+    }); 
+  };
+
+  const uploadPost = async (selectedFile: File) => {
+
   }
 
 
