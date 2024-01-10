@@ -24,6 +24,7 @@ function Dropzone() {
 
   const uploadPost = async (selectedFile: File) => {
     if (loading) return;
+    if (!user) return;
 
     setLoading(true);
 
