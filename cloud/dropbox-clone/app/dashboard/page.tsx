@@ -1,5 +1,6 @@
+import Dropzone from "@/components/Dropzpne";
 import { auth } from "@clerk/nextjs"
-import Dropzone from "react-dropzone";
+
 
 
 function Dashboard() {

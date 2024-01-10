@@ -1,10 +1,10 @@
 "use client";
 
-import Dropzone from "react-dropzone";
+import DropzoneComponent from "react-dropzone";
 
 function Dropzone() {
   return (
-    <Dropzone onDrop={acceptedFiles => console.log(acceptedFiles)}>
+    <DropzoneComponent onDrop={acceptedFiles => console.log(acceptedFiles)}>
       {({getRootProps, getInputProps}) => (
         <section>
           <div {...getRootProps()}>
@@ -13,7 +13,7 @@ function Dropzone() {
           </div>
         </section>
       )}
-    </Dropzone>
+    </DropzoneComponent>
   )
 }
 
