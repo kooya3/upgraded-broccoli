@@ -1,5 +1,6 @@
 "use client";
 
+import { cn } from "@/lib/utils";
 import DropzoneComponent from "react-dropzone";
 
 function Dropzone() {
@@ -19,7 +20,12 @@ function Dropzone() {
 
      
         <section>
-          <div {...getRootProps()}>
+          <div 
+          {...getRootProps()}
+          className={cn(
+            "w-full h-52 flex justify-center items-center p-5 border border-dashed rounded-lg text-center "
+          )}
+          >
             <input {...getInputProps()} />
             {!isDragActive && "Click here or drop a file to upload!"}
             {isDragActive && !isDragReject && "Drop to upload this file!"}
