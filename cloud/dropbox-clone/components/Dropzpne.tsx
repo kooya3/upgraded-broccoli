@@ -1,11 +1,13 @@
 "use client";
 
 import { cn } from "@/lib/utils";
+import { useUser } from "@clerk/nextjs";
 import { useState } from "react";
 import DropzoneComponent from "react-dropzone";
 
 function Dropzone() {
   const [loading, setLoading] = useState(false);
+  const { isLoaded, isSignedIn, user } = useUser();
 
   const onDrop = (acceptedFiles: File[]) => {
     acceptedFiles.forEach(file => {
@@ -21,7 +23,14 @@ function Dropzone() {
   };
 
   const uploadPost = async (selectedFile: File) => {
+    if (loading) return;
 
+    setLoading(true);
+
+
+    // do what needs to be done...
+
+    setLoading(false);
   }
 
 
