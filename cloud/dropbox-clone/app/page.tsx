@@ -7,7 +7,7 @@ export default function Home() {
       <div className="flex flex-col lg:flex-row items-center bg-[#1E1919] dark:bg-slate-800">
         <div className="p-10 font-sans flex flex-col bg-[#1E1919] dark:bg-slate-800 text-[#FFFFFF] space-y-5 space-x-4">
           <h1 className="m-lg text-5xl font-bold">
-            Welcome to Dropbox. <br /><br />
+            Welcome to MyBox <br /><br />
             Storing everything for you and your business needs. All in one place.
             
       </h1>
@@ -22,7 +22,7 @@ export default function Home() {
 
           <Link
             href="/dashboard"
-            className="m-xl mt-lg text-xl h-[4vh] rounded-lg flex cursor-pointer bg-blue-500 hover:bg-blue-600 active:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300 focus p-4 w-1/6 h-fit mx-3"
+            className="inline-flex m-xl mt-lg text-xl h-[4vh] rounded-lg flex cursor-pointer bg-blue-500 hover:bg-blue-600 active:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300 focus p-4 w-1/6 h-fit mx-3"
           >
             Try it for free!
             <ArrowRight className="w-[15px] m-auto animate-ping inline-flex place-self-center rounded-full bg-sky-400 opacity-80" />
