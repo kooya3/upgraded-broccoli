@@ -7,7 +7,7 @@ export default function Home() {
       <div className="flex flex-col lg:flex-row items-center bg-[#1E1919] dark:bg-slate-800">
         <div className="p-10 font-sans flex flex-col bg-[#1E1919] dark:bg-slate-800 text-[#FFFFFF] space-y-5 space-x-4">
           <h1 className="m-lg text-5xl font-bold">
-            Welcome to MyBox <br /><br />
+            Welcome to MyBox. <br /><br />
             Storing everything for you and your business needs. All in one place.
             
       </h1>
