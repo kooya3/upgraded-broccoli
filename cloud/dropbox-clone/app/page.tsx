@@ -22,7 +22,7 @@ export default function Home() {
 
           <Link
             href="/dashboard"
-            className="inline-flex m-xl mt-lg text-xl h-[4vh] rounded-lg flex cursor-pointer bg-blue-500 hover:bg-blue-600 active:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300 focus p-4 w-1/6 h-fit mx-3"
+            className="m-xl mt-lg text-xl h-[4vh] rounded-lg flex cursor-pointer bg-blue-500 hover:bg-blue-600 active:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300 focus p-4 w-1/6 h-fit mx-3"
           >
             Try it for free!
             <ArrowRight className="w-[15px] m-auto animate-ping inline-flex place-self-center rounded-full bg-sky-400 opacity-80" />
