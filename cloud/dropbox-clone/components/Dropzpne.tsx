@@ -1,9 +1,10 @@
 "use client";
 
-import { db } from "@/firebase";
+import { db, storage } from "@/firebase";
 import { cn } from "@/lib/utils";
 import { useUser } from "@clerk/nextjs";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
+import { ref } from "firebase/storage";
 import { useState } from "react";
 import DropzoneComponent from "react-dropzone";
 
@@ -40,6 +41,8 @@ function Dropzone() {
       type: selectedFile.type,
       size: selectedFile.size,
      })
+
+    const imageRef = ref(storage, `users/${user.id}/files/${docRef.id}`);
 
 
     // do what needs to be done...
