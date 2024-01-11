@@ -1,8 +1,11 @@
-import React from 'react'
+import { FileType } from "@/typings";
+import { Button } from "../ui/button";
 
-function TableWrapper() {
+function TableWrapper({ skeletonFiles }: { skeletonFiles: FileType[] }) {
   return (
-    <div>TableWrapper</div>
+    <div>
+      <Button>Sort By...</Button>
+    </div>
   )
 }
 
