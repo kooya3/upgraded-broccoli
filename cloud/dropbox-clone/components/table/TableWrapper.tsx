@@ -1,6 +1,7 @@
 import { FileType } from "@/typings";
 import { Button } from "../ui/button";
 
+
 function TableWrapper({ skeletonFiles }: { skeletonFiles: FileType[] }) {
   return (
     <div>
