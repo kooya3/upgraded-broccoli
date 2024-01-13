@@ -66,9 +66,10 @@ export function DeleteModal() {
     >
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
-          <DialogTitle>Are you sure you want to delete?</DialogTitle>
-          <DialogDescription>
-            This action cannot be undone. This will permanently delete your
+          <DialogTitle className="mt-sm">Are you sure you want to delete?</DialogTitle>
+          <br />
+          <DialogDescription className="mb-sm">
+            Cannot be undone. This will permanently delete your
             file!
           </DialogDescription>
         </DialogHeader>
