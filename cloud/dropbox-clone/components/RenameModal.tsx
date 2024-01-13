@@ -57,6 +57,7 @@ function RenameModal() {
           <DialogTitle className="pb-2 h-{4vh}">Rename the File</DialogTitle>
 
           <Input
+            className=""
             id="link"
             defaultValue={filename}
             onChange={(e) => setInput(e.target.value)}
@@ -69,7 +70,7 @@ function RenameModal() {
 
           <div className="flex justify-end space-x-3 py-3">
             <Button
-              size="sm"
+              size="lg"
               className="px-2"
               variant={"ghost"}
               onClick={() => setIsRenameModalOpen(false)}
@@ -80,7 +81,7 @@ function RenameModal() {
 
             <Button
               type="submit"
-              size="sm"
+              size="lg"
               className="px-2"
               onClick={() => renameFile()}
             >
