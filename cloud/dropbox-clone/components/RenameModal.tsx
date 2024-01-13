@@ -67,7 +67,7 @@ function RenameModal() {
             }}
           />
 
-          <div className="flex justify-end space-x-2 py-3">
+          <div className="flex justify-end space-x-3 py-3">
             <Button
               size="sm"
               className="px-5"
@@ -75,7 +75,7 @@ function RenameModal() {
               onClick={() => setIsRenameModalOpen(false)}
             >
               <span className="sr-only">Cancel</span>
-              <span>Cancel</span>
+              <span className="mr-md h-{6px} space-x-3">Cancel</span>
             </Button>
 
             <Button
