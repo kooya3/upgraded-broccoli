@@ -54,7 +54,7 @@ function RenameModal() {
     >
       <DialogContent>
         <DialogHeader>
-          <DialogTitle className="pb-2">Rename the File</DialogTitle>
+          <DialogTitle className="pb-2 h-{4vh}">Rename the File</DialogTitle>
 
           <Input
             id="link"
@@ -70,18 +70,18 @@ function RenameModal() {
           <div className="flex justify-end space-x-3 py-3">
             <Button
               size="sm"
-              className="px-5"
+              className="px-2"
               variant={"ghost"}
               onClick={() => setIsRenameModalOpen(false)}
             >
-              <span className="sr-only">Cancel</span>
-              <span className="mr-md h-{6px} space-x-3">Cancel</span>
+              <span className="gap-{15px} sr-only">Cancel</span>
+              <span className="mr-md h-{6px} gap-sm">Cancel</span>
             </Button>
 
             <Button
               type="submit"
               size="sm"
-              className="px-3"
+              className="px-2"
               onClick={() => renameFile()}
             >
               <span className="sr-only">Rename</span>
